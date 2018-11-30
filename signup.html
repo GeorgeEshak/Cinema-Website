@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>validation</title>
+<link rel="stylesheet" href="css/Rstyle.css">
+<script>
+    function checkpass(form)  
+   {  
+     var a = document.forms['myform']['pass'].value; 
+  	if(a == "") { 
+       alert("Error: password cannot be blank!");
+       return false;
+     }	
+ 	Check = /[0-9]/;  
+     if(!Check.test(a)) {  
+      alert("Error: password must contain at least one number (0-9)!"); 
+       return false;  
+     }  
+     Check = /[a-z]/;  
+     if(!Check.test(a)) {  
+      alert("Error: password must contain at least one lowercase letter (a-z)!"); 
+       return false;  
+     }
+      Check = /[A-Z]/;  
+     if(!Check.test(a)) {  
+      alert("Error: password must contain at least one uppercase letter (A-Z)!");  
+      return false;  
+     }
+	
+	}
+</script>
+
+</head>
+<body background="cinema.jpg" style="background-repeat: no-repeat;background-size: 100%;">
+    <div class="form">
+        
+        <form id="myform" onsubmit="return checkpass(this);" method="get" action="signup.php" >
+           <table border="2">
+            <tr><td>UserName: <td><input type="text" id ="Uname" name="Uname"></td>
+            <tr><td>Email:    <td><input type="email" id="email" name="mail"></td>
+			<tr><td>Password: <td><input type="password" id ="pass" name="pass"></td>
+            
+            </table>
+          <input type="submit" name="submit">
+        </form>
+       
+    </div>            
+</body>
+</html>

@@ -1,0 +1,21 @@
+.form
+{
+	margin:50px 500px;
+    
+      
+	padding: 200px 120px;
+	   
+}
+.submit
+{
+	margin:4px 100px;
+}
+
+@media(max-width:768px)
+{
+    
+	.form{
+		margin: 22px 250px;
+	}
+    
+}

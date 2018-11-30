@@ -1,0 +1,210 @@
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom:0px; 
+}
+
+
+.navbar-inverse .navbar-brand
+{
+    color:#a9a5a5;
+    font-weight:500;
+    font-size: 30px;
+    padding-left: 0px;
+    -webkit-transition:color .80s ease-in-out;
+    -moz-transition:color .80s ease-in-out;
+    -a-transition:color .80s ease-in-out;
+    transition:color .80s ease-in-out;
+}
+
+.navbar-inverse .navbar-brand:hover
+{
+ font-size: 35px;
+ font-family: "Courier New", Courier, monospace;
+ color:red;
+ padding-left: 0px;
+ 
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+    background-color: #de0909;
+}
+
+.navbar-nav > li >a
+{
+    font-size: 18px;
+      color:#a9a5a5;
+}
+
+.navbar-nav > li > .dropdown-menu
+{
+    border-top:4px solid red;
+    border-bottom: 4px;
+    background-color: #222;   
+}
+
+.dropdown-menu
+{
+    min-width: 200px;
+    left:0;
+    right:auto;
+}
+
+.navbar-right .dropdown-menu
+{
+    left:0;
+    right:auto;
+}
+
+.dropdown-menu > li > a
+{
+    color: white;
+    padding:6px 20px;
+    -webkit-transition: padding .5s ease;
+    -moz-transition: padding .5s ease;
+    -a-transition: padding .5s ease;
+    transition: padding .5s ease;
+    
+}
+
+.dropdown-menu > li > a:active,
+.dropdown-menu > li > a:hover
+{   
+    padding-left:25px;
+}
+
+.dropdown-menu .divider
+{
+    background-color: red;
+}
+
+
+
+
+
+/*carsoel*/
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img
+{
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-caption
+{
+    bottom: 218px;
+    background: rgba(3,3,3,.5);
+}
+.carousel-caption >h1
+{
+    color:red;
+    font-weight: bold;
+}
+.carousel-caption > p
+{
+    color:#9d9d9d;
+    font-size: 30px;
+}
+
+.carousel-indicators li
+{
+    height:15px;
+    width: 15px;
+}
+
+.carousel-indicators .active
+{
+    width: 17px;
+    height: 17px;
+    background: red;
+}
+
+
+@media(max-width:768px)
+{
+    .carousel-caption
+    {
+        bottom:75px;
+    }
+    
+}
+
+
+.speak select 
+{
+ width: 145px;
+ height28px;
+}
+.Actors .carousel-inner 
+{
+    min-height:160;
+    padding-bottom: 200px;
+}
+
+.Actors .carousel-indicators
+{
+    top:135px;
+    padding-bottom: 250px; 
+}
+
+.Actors .carousel-indicators li
+{
+    text-indent: 0;
+    width:80px;
+    height: 80px;
+    opacity: .5;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition:all .05s ease;
+    -moz-transition:all .5s ease;
+    -a-transition:all .5s ease;
+    transition:all .5s ease;
+}
+
+.Actors .carousel-indicators li.active
+{
+    opacity: 1;
+    background: none;
+    border: 3px solid red;
+}
+
+.Actors .carousel-indicators li img
+{
+    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Actors .carousel-inner span
+{
+    font-size:25px;
+}
+@media(max-width:768px)
+{
+   .Actors .carousel-inner span
+  {
+      font-size:100%;
+  }
+ .Actors .carousel-indicators 
+  {
+   padding-top: 10px;
+   padding-bottom: 500px;
+  }
+  .Actors .carousel-indicators li
+  {
+   width: 65px;
+   height: 65px;
+   padding-bottom: 30px;
+  }
+  
+}  
+  
+.footer {
+    margin-top: 120px;
+    background-color: red;
+    height: 90px;
+    text-align: center;
+}
